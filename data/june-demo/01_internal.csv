@@ -1,0 +1,5 @@
+event_id,execution_id,revision,event_type,account_id,instrument_id,side,currency,quantity,price,trade_date,occurred_at,note
+D3-M-I1,D3-MATCH,1,NEW,ACC01,STOCK01,BUY,USD,100,10,2026-06-18,2026-06-18T09:00:00Z,synthetic exact match
+D3-B-I1,D3-BREAK,1,NEW,ACC01,STOCK01,BUY,USD,100,20,2026-06-18,2026-06-18T09:00:00Z,synthetic price mismatch
+D3-W-I1,D3-WAIT,1,NEW,ACC01,STOCK01,BUY,USD,100,30,2026-06-18,2026-06-18T09:00:00Z,waiting for broker
+D3-G-I3,D3-BLOCK,3,CORRECT,ACC01,STOCK01,BUY,USD,100,40,2026-06-18,2026-06-18T09:00:00Z,missing revisions one and two

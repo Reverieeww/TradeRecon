@@ -1,0 +1,2 @@
+event_id,execution_id,revision,event_type,account_id,instrument_id,side,currency,quantity,price,trade_date,occurred_at,note
+ev002,E100,2,CORRECT,ACC01,STOCK01,BUY,USD,50.000000,100.250000,2026-10-15,2026-10-15T09:00:00Z,synthetic

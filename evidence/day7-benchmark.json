@@ -1,0 +1,288 @@
+{
+  "scope" : "Service ingestion and full snapshot/calculation/transactional publication, separately; excludes HTTP, source generation, dataset setup, verification queries and AI.",
+  "totalRowsMeaning" : "Sum of BOTH feeds; unique execution keys=totalRows/2; 1% price discrepancies, zero duplicate rows.",
+  "warmups" : 1,
+  "measuredRepeats" : 10,
+  "seed" : "sequential deterministic IDs; no RNG",
+  "java" : "21.0.12.1",
+  "os" : "Windows 11 10.0",
+  "cpu" : "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "logicalProcessors" : 16,
+  "jvmMaxHeap" : 8355053568,
+  "postgres" : "PostgreSQL 17.6 on x86_64-windows, compiled by msvc-19.44.35213, 64-bit",
+  "baseCommit" : "fb17b29 plus recorded source hash",
+  "sourceSha256" : "99a79e1e3098581694ab64c80f7aa7a1196e26dc998907d626f472f1965c7ffe",
+  "recordedAt" : "2026-10-18T20:13:05.220623200Z",
+  "samples" : [ {
+    "totalRows" : 1000,
+    "repeat" : 1,
+    "importMs" : 223.0919,
+    "reconciliationMs" : 216.9337,
+    "sumOfHeapPoolPeaksBytes" : 152210936,
+    "dataset" : "35eead53-d6b7-497f-81d3-678d6f4f41b5",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 2,
+    "importMs" : 190.5355,
+    "reconciliationMs" : 197.3454,
+    "sumOfHeapPoolPeaksBytes" : 86340960,
+    "dataset" : "c25bfcad-922b-4086-8c06-98af6c9f1f03",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 3,
+    "importMs" : 205.924,
+    "reconciliationMs" : 191.9527,
+    "sumOfHeapPoolPeaksBytes" : 105803616,
+    "dataset" : "610371cd-6267-4065-936d-e6eb46a97d7f",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 4,
+    "importMs" : 156.2068,
+    "reconciliationMs" : 213.8231,
+    "sumOfHeapPoolPeaksBytes" : 104666200,
+    "dataset" : "3681595f-795f-44f5-ba90-a92a6f0d1908",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 5,
+    "importMs" : 132.9893,
+    "reconciliationMs" : 193.0888,
+    "sumOfHeapPoolPeaksBytes" : 95590920,
+    "dataset" : "f99bdb75-8652-4902-82a3-260c41c847a7",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 6,
+    "importMs" : 129.1249,
+    "reconciliationMs" : 179.3916,
+    "sumOfHeapPoolPeaksBytes" : 103979528,
+    "dataset" : "1c6274d1-0447-46aa-8842-31cfa396ba75",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 7,
+    "importMs" : 117.4985,
+    "reconciliationMs" : 174.7998,
+    "sumOfHeapPoolPeaksBytes" : 103509896,
+    "dataset" : "d192bcac-78ab-4983-ba35-557a94d16f0a",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 8,
+    "importMs" : 102.7458,
+    "reconciliationMs" : 156.4803,
+    "sumOfHeapPoolPeaksBytes" : 104074936,
+    "dataset" : "2773d328-43bd-4cf5-9172-2bc97a7c434c",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 9,
+    "importMs" : 102.2917,
+    "reconciliationMs" : 142.6659,
+    "sumOfHeapPoolPeaksBytes" : 83103416,
+    "dataset" : "0dae73f0-821e-41a9-9278-0dd2e29417fe",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 1000,
+    "repeat" : 10,
+    "importMs" : 105.7774,
+    "reconciliationMs" : 147.0891,
+    "sumOfHeapPoolPeaksBytes" : 104074936,
+    "dataset" : "a1341a81-91cb-4480-9a89-5dd57434b6df",
+    "businessDigest" : "be98dc4298e2816ec4a63f79ad0d69ad",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 1,
+    "importMs" : 906.5577,
+    "reconciliationMs" : 1179.6463,
+    "sumOfHeapPoolPeaksBytes" : 244336472,
+    "dataset" : "590c2cf5-51da-4f28-abb5-3f8c012661e6",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 2,
+    "importMs" : 930.7691,
+    "reconciliationMs" : 1283.3904,
+    "sumOfHeapPoolPeaksBytes" : 235977816,
+    "dataset" : "dc9a4663-6675-442d-b536-fe6b50eb0b53",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 3,
+    "importMs" : 985.7627,
+    "reconciliationMs" : 1081.3083,
+    "sumOfHeapPoolPeaksBytes" : 239200216,
+    "dataset" : "ee290fcb-408f-40cc-8705-37cd9cb6728c",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 4,
+    "importMs" : 1009.4661,
+    "reconciliationMs" : 1082.9401,
+    "sumOfHeapPoolPeaksBytes" : 237986424,
+    "dataset" : "470fc52d-6158-46a3-8dfb-f67ce87d95c5",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 5,
+    "importMs" : 848.6635,
+    "reconciliationMs" : 1147.0127,
+    "sumOfHeapPoolPeaksBytes" : 242186920,
+    "dataset" : "bacd4e87-3f5b-48cd-b469-6c5d78f69df0",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 6,
+    "importMs" : 875.1976,
+    "reconciliationMs" : 1100.8782,
+    "sumOfHeapPoolPeaksBytes" : 243312040,
+    "dataset" : "c779082f-51b8-4a43-a910-4871200a13e8",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 7,
+    "importMs" : 808.201,
+    "reconciliationMs" : 1203.876,
+    "sumOfHeapPoolPeaksBytes" : 239125992,
+    "dataset" : "58a295f6-94a1-4182-9135-58b365bd7a93",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 8,
+    "importMs" : 959.0165,
+    "reconciliationMs" : 1163.2886,
+    "sumOfHeapPoolPeaksBytes" : 241185432,
+    "dataset" : "abc02b41-0d9e-4c5a-943e-a842921f369d",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 9,
+    "importMs" : 877.4432,
+    "reconciliationMs" : 1217.4755,
+    "sumOfHeapPoolPeaksBytes" : 237943016,
+    "dataset" : "ed4cc26a-3d83-429b-bd0f-43c642e8d68a",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 10000,
+    "repeat" : 10,
+    "importMs" : 883.3782,
+    "reconciliationMs" : 1218.1295,
+    "sumOfHeapPoolPeaksBytes" : 237953336,
+    "dataset" : "bb7dc130-c0df-4d2a-b7f0-12cac2f96431",
+    "businessDigest" : "35e3daf3af289b337b3d70c7e070fd47",
+    "batchCount" : 2
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 1,
+    "importMs" : 9900.6888,
+    "reconciliationMs" : 11565.6846,
+    "sumOfHeapPoolPeaksBytes" : 1186093744,
+    "dataset" : "2bed5ca0-ddb0-4fa0-8bff-5986592fbf99",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 2,
+    "importMs" : 9345.35,
+    "reconciliationMs" : 11159.2112,
+    "sumOfHeapPoolPeaksBytes" : 1180684576,
+    "dataset" : "86c5e23b-e781-49e7-a0cf-ab187cfcd382",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 3,
+    "importMs" : 9891.6958,
+    "reconciliationMs" : 11219.5053,
+    "sumOfHeapPoolPeaksBytes" : 813694976,
+    "dataset" : "60682d59-3757-4fe4-91f2-3852cc4a6cea",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 4,
+    "importMs" : 9558.1498,
+    "reconciliationMs" : 11678.9065,
+    "sumOfHeapPoolPeaksBytes" : 865942232,
+    "dataset" : "907836fc-62fb-49c0-a28f-04af2918f351",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 5,
+    "importMs" : 10800.5807,
+    "reconciliationMs" : 12001.7541,
+    "sumOfHeapPoolPeaksBytes" : 1059762480,
+    "dataset" : "8dd86eaa-1f35-423f-8c0f-4aad622b958d",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 6,
+    "importMs" : 9601.9365,
+    "reconciliationMs" : 12332.3748,
+    "sumOfHeapPoolPeaksBytes" : 950710576,
+    "dataset" : "95ae7aa8-f6c4-4c8f-9868-216e61b3f153",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 7,
+    "importMs" : 10182.3221,
+    "reconciliationMs" : 12065.5322,
+    "sumOfHeapPoolPeaksBytes" : 980325232,
+    "dataset" : "0b4d3576-588e-49c5-afde-c0deaf73736d",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 8,
+    "importMs" : 9539.7334,
+    "reconciliationMs" : 12054.026,
+    "sumOfHeapPoolPeaksBytes" : 1408215320,
+    "dataset" : "3b401695-811d-4b39-9ab8-b0b6e355a4cb",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 9,
+    "importMs" : 13043.6391,
+    "reconciliationMs" : 15243.7169,
+    "sumOfHeapPoolPeaksBytes" : 826276560,
+    "dataset" : "8637a0bb-da6c-413f-98ab-27aff504c5d8",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  }, {
+    "totalRows" : 100000,
+    "repeat" : 10,
+    "importMs" : 12265.4389,
+    "reconciliationMs" : 14834.4242,
+    "sumOfHeapPoolPeaksBytes" : 721418960,
+    "dataset" : "aac598a4-6291-4615-9405-f794fa70ad38",
+    "businessDigest" : "c5e6f577e1c8d05aba2671ef040f40e6",
+    "batchCount" : 10
+  } ],
+  "failures" : [ ]
+}

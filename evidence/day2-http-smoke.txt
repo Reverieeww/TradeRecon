@@ -1,0 +1,9 @@
+PASS: 01_new.csv HTTP 201
+PASS: 01_new.csv HTTP 200
+PASS: 02_correction.csv HTTP 201
+PASS: 03_conflict.csv HTTP 409
+PASS: 04_gap.csv HTTP 201
+Observed E-GAP status before repair: DATA_BLOCKED (ACTIVE if this demonstration was already run)
+PASS: 05_fill_gap.csv HTTP 201
+PASS: E-GAP projects revision 3 after gap repair.
+PASS: authenticated import page renders accepted and rejected batch history.

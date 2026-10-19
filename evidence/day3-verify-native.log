@@ -1,0 +1,199 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< dev.huanling:trade-recon >----------------------
+[INFO] Building TradeRecon 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ trade-recon ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 7 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ trade-recon ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 34 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ trade-recon ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ trade-recon ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 10 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] /C:/Users/Aurora/Desktop/trade-recon/src/test/java/dev/huanling/traderecon/persistence/ReconciliationIT.java: C:\Users\Aurora\Desktop\trade-recon\src\test\java\dev\huanling\traderecon\persistence\ReconciliationIT.javaʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /C:/Users/Aurora/Desktop/trade-recon/src/test/java/dev/huanling/traderecon/persistence/ReconciliationIT.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ trade-recon ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running dev.huanling.traderecon.domain.MoneyFieldsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s -- in dev.huanling.traderecon.domain.MoneyFieldsTest
+[INFO] Running dev.huanling.traderecon.domain.TradeEventTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s -- in dev.huanling.traderecon.domain.TradeEventTest
+[INFO] Running dev.huanling.traderecon.ingestion.CsvParserTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 s -- in dev.huanling.traderecon.ingestion.CsvParserTest
+[INFO] Running dev.huanling.traderecon.reconciliation.ExecutionProjectorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s -- in dev.huanling.traderecon.reconciliation.ExecutionProjectorTest
+[INFO] Running dev.huanling.traderecon.reconciliation.ReconciliationEngineTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 s -- in dev.huanling.traderecon.reconciliation.ReconciliationEngineTest
+[INFO] Running dev.huanling.traderecon.security.SecurityTest
+14:11:45.967 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [dev.huanling.traderecon.security.SecurityTest]: SecurityTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:11:46.139 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration dev.huanling.traderecon.TradeReconApplication for test class dev.huanling.traderecon.security.SecurityTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-18T14:11:46.566+01:00  INFO 22444 --- [trade-recon] [           main] d.h.traderecon.security.SecurityTest     : Starting SecurityTest using Java 21.0.12.1 with PID 22444 (started by Aurora in C:\Users\Aurora\Desktop\trade-recon)
+2026-10-18T14:11:46.567+01:00  INFO 22444 --- [trade-recon] [           main] d.h.traderecon.security.SecurityTest     : No active profile set, falling back to 1 default profile: "default"
+2026-10-18T14:11:47.609+01:00  INFO 22444 --- [trade-recon] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+2026-10-18T14:11:47.675+01:00  INFO 22444 --- [trade-recon] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-18T14:11:48.124+01:00  INFO 22444 --- [trade-recon] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-18T14:11:48.124+01:00  INFO 22444 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-18T14:11:48.125+01:00  INFO 22444 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-10-18T14:11:48.158+01:00  INFO 22444 --- [trade-recon] [           main] d.h.traderecon.security.SecurityTest     : Started SecurityTest in 1.958 seconds (process running for 3.836)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\Aurora\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.225 s -- in dev.huanling.traderecon.security.SecurityTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ trade-recon ---
+[INFO] Building jar: C:\Users\Aurora\Desktop\trade-recon\target\trade-recon-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ trade-recon ---
+[INFO] Replacing main artifact C:\Users\Aurora\Desktop\trade-recon\target\trade-recon-0.1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\Aurora\Desktop\trade-recon\target\trade-recon-0.1.0-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- failsafe:3.5.6:integration-test (default) @ trade-recon ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running dev.huanling.traderecon.persistence.DatabaseIT
+14:11:50.716 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [dev.huanling.traderecon.persistence.DatabaseIT]: DatabaseIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:11:50.840 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration dev.huanling.traderecon.TradeReconApplication for test class dev.huanling.traderecon.persistence.DatabaseIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-18T14:11:51.289+01:00  INFO 11376 --- [trade-recon] [           main] d.h.traderecon.persistence.DatabaseIT    : Starting DatabaseIT using Java 21.0.12.1 with PID 11376 (started by Aurora in C:\Users\Aurora\Desktop\trade-recon)
+2026-10-18T14:11:51.291+01:00  INFO 11376 --- [trade-recon] [           main] d.h.traderecon.persistence.DatabaseIT    : No active profile set, falling back to 1 default profile: "default"
+2026-10-18T14:11:53.227+01:00  INFO 11376 --- [trade-recon] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://127.0.0.1:55432/traderecon_test (PostgreSQL 17.6)
+2026-10-18T14:11:53.286+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.038s)
+2026-10-18T14:11:53.332+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2026-10-18T14:11:53.339+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-10-18T14:11:53.872+01:00  INFO 11376 --- [trade-recon] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+2026-10-18T14:11:54.088+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-18T14:11:54.498+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-18T14:11:55.435+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-18T14:11:55.435+01:00  INFO 11376 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-18T14:11:55.436+01:00  INFO 11376 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-10-18T14:11:55.511+01:00  INFO 11376 --- [trade-recon] [           main] d.h.traderecon.persistence.DatabaseIT    : Started DatabaseIT in 4.527 seconds (process running for 5.432)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\Aurora\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-10-18T14:11:56.258+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-18T14:11:56.304+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@445b4594
+2026-10-18T14:11:56.308+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.023 s -- in dev.huanling.traderecon.persistence.DatabaseIT
+[INFO] Running dev.huanling.traderecon.persistence.ImportIT
+2026-10-18T14:11:56.596+01:00  INFO 11376 --- [trade-recon] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [dev.huanling.traderecon.persistence.ImportIT]: ImportIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-18T14:11:56.612+01:00  INFO 11376 --- [trade-recon] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration dev.huanling.traderecon.TradeReconApplication for test class dev.huanling.traderecon.persistence.ImportIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-18T14:11:56.647+01:00  INFO 11376 --- [trade-recon] [           main] d.h.traderecon.persistence.ImportIT      : Starting ImportIT using Java 21.0.12.1 with PID 11376 (started by Aurora in C:\Users\Aurora\Desktop\trade-recon)
+2026-10-18T14:11:56.649+01:00  INFO 11376 --- [trade-recon] [           main] d.h.traderecon.persistence.ImportIT      : No active profile set, falling back to 1 default profile: "default"
+2026-10-18T14:11:57.062+01:00  INFO 11376 --- [trade-recon] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://127.0.0.1:55432/traderecon_test (PostgreSQL 17.6)
+2026-10-18T14:11:57.076+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.006s)
+2026-10-18T14:11:57.116+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2026-10-18T14:11:57.116+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-10-18T14:11:57.324+01:00  INFO 11376 --- [trade-recon] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+2026-10-18T14:11:57.334+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-18T14:11:57.398+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-18T14:11:57.477+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-18T14:11:57.477+01:00  INFO 11376 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-18T14:11:57.477+01:00  INFO 11376 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-10-18T14:11:57.494+01:00  INFO 11376 --- [trade-recon] [           main] d.h.traderecon.persistence.ImportIT      : Started ImportIT in 0.874 seconds (process running for 7.415)
+2026-10-18T14:11:57.509+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-10-18T14:11:57.543+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@7695184b
+2026-10-18T14:11:57.544+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.718 s -- in dev.huanling.traderecon.persistence.ImportIT
+[INFO] Running dev.huanling.traderecon.persistence.ReconciliationIT
+2026-10-18T14:11:58.315+01:00  INFO 11376 --- [trade-recon] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [dev.huanling.traderecon.persistence.ReconciliationIT]: ReconciliationIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-18T14:11:58.318+01:00  INFO 11376 --- [trade-recon] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration dev.huanling.traderecon.TradeReconApplication for test class dev.huanling.traderecon.persistence.ReconciliationIT
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-18T14:11:58.372+01:00  INFO 11376 --- [trade-recon] [           main] d.h.t.persistence.ReconciliationIT       : Starting ReconciliationIT using Java 21.0.12.1 with PID 11376 (started by Aurora in C:\Users\Aurora\Desktop\trade-recon)
+2026-10-18T14:11:58.372+01:00  INFO 11376 --- [trade-recon] [           main] d.h.t.persistence.ReconciliationIT       : No active profile set, falling back to 1 default profile: "default"
+2026-10-18T14:11:58.741+01:00  INFO 11376 --- [trade-recon] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://127.0.0.1:55432/traderecon_test (PostgreSQL 17.6)
+2026-10-18T14:11:58.752+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.005s)
+2026-10-18T14:11:58.791+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+2026-10-18T14:11:58.792+01:00  INFO 11376 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-10-18T14:11:58.976+01:00  INFO 11376 --- [trade-recon] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+2026-10-18T14:11:58.981+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-18T14:11:59.018+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-18T14:11:59.100+01:00  INFO 11376 --- [trade-recon] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-18T14:11:59.101+01:00  INFO 11376 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-18T14:11:59.101+01:00  INFO 11376 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-10-18T14:11:59.112+01:00  INFO 11376 --- [trade-recon] [           main] d.h.t.persistence.ReconciliationIT       : Started ReconciliationIT in 0.766 seconds (process running for 9.034)
+2026-10-18T14:11:59.118+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-10-18T14:11:59.146+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@358f85b1
+2026-10-18T14:11:59.147+01:00  INFO 11376 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.717 s -- in dev.huanling.traderecon.persistence.ReconciliationIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.5.6:verify (default) @ trade-recon ---
+[INFO] 
+[INFO] --- spotless:2.44.3:check (default) @ trade-recon ---
+[INFO] Spotless.Java is keeping 44 files clean - 0 needs changes to be clean, 14 were already clean, 30 were skipped because caching determined they were already clean
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.241 s
+[INFO] Finished at: 2026-10-18T14:12:01+01:00
+[INFO] ------------------------------------------------------------------------

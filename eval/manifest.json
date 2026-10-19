@@ -1,0 +1,24 @@
+{
+  "version": "eval-v1",
+  "synthetic": true,
+  "seed": "none",
+  "frozenCount": 60,
+  "challengeCount": 10,
+  "groupCounts": {
+    "normal": 10,
+    "quantity": 10,
+    "price": 10,
+    "other_fields": 10,
+    "missing": 10,
+    "versions_cancel": 10
+  },
+  "insufficientFrozenCount": 10,
+  "humanReview": "PENDING",
+  "oracle": "Explicit authored labels checked against deterministic rules; not human-reviewed gold and not model-scored",
+  "frozen": true,
+  "files": {
+    "cases.json": "3b02f308e8deb512ab0669aed8db15e06eb1fde207b392ccf145bcd125f9e771",
+    "challenges.json": "0a72499f7fb2f47f30232042adbd35b648816bbfbbbf97ed1e964b48ee55fa8f",
+    "development.json": "fb779ea956c564b6bcb1f040bdc3c4d76b96e33ddfe90f8af2f9cb14d401bf85"
+  }
+}

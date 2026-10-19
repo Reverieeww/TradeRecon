@@ -1,0 +1,91 @@
+[
+  {
+    "id": "dev-01",
+    "split": "development",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "11",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "12",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "dev-02",
+    "split": "development",
+    "group": "missing",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 599,
+    "completeSources": [],
+    "expected": {
+      "status": "WAITING",
+      "reasons": [
+        "MISSING_BROKER",
+        "WITHIN_WAIT_WINDOW"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  }
+]

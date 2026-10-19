@@ -1,0 +1,22 @@
+2026-10-18T16:19:47.293+01:00  INFO 41612 --- [trade-recon] [           main] d.h.t.persistence.CrashWorkerProbe       : Starting CrashWorkerProbe using Java 21.0.12.1 with PID 41612 (C:\Users\Aurora\Desktop\trade-recon\target\test-classes started by Aurora in C:\Users\Aurora\Desktop\trade-recon)
+2026-10-18T16:19:47.295+01:00  INFO 41612 --- [trade-recon] [           main] d.h.t.persistence.CrashWorkerProbe       : No active profile set, falling back to 1 default profile: "default"
+2026-10-18T16:19:48.316+01:00  INFO 41612 --- [trade-recon] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-10-18T16:19:48.329+01:00  INFO 41612 --- [trade-recon] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-18T16:19:48.329+01:00  INFO 41612 --- [trade-recon] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-10-18T16:19:48.368+01:00  INFO 41612 --- [trade-recon] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-18T16:19:48.369+01:00  INFO 41612 --- [trade-recon] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1041 ms
+2026-10-18T16:19:48.805+01:00  INFO 41612 --- [trade-recon] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://127.0.0.1:55432/traderecon_test (PostgreSQL 17.6)
+2026-10-18T16:19:48.835+01:00  INFO 41612 --- [trade-recon] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.018s)
+2026-10-18T16:19:48.866+01:00  INFO 41612 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 4
+2026-10-18T16:19:48.868+01:00  INFO 41612 --- [trade-recon] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-10-18T16:19:49.135+01:00  INFO 41612 --- [trade-recon] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+2026-10-18T16:19:49.179+01:00  INFO 41612 --- [trade-recon] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-18T16:19:49.317+01:00  INFO 41612 --- [trade-recon] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-18T16:19:49.587+01:00  INFO 41612 --- [trade-recon] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 52089 (http) with context path '/'
+2026-10-18T16:19:49.595+01:00  INFO 41612 --- [trade-recon] [           main] d.h.t.persistence.CrashWorkerProbe       : Started CrashWorkerProbe in 2.581 seconds (process running for 2.793)
+2026-10-18T16:19:49.647+01:00  INFO 41612 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-18T16:19:49.680+01:00  INFO 41612 --- [trade-recon] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22368ddc
+2026-10-18T16:19:49.693+01:00  INFO 41612 --- [trade-recon] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+READY_TO_KILL
+
+PASS forced child termination at after-commit; database invariants and recovery verified. run=0249eee3-6588-47d0-b88e-6119e1d8557e

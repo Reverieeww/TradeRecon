@@ -1,0 +1,32 @@
+target/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+private-notes/
+.local/
+.tools/
+.idea/
+*.iml
+__pycache__/
+
+# Personal planning and learning material (kept locally).
+/PLAN.md
+/docs/day1-learning.md
+/docs/day2-learning.md
+/docs/day3-learning.md
+/docs/day4-learning.md
+/docs/day5-learning.md
+/docs/day6-learning.md
+/docs/day5-demo-script.md
+/docs/day7-interview.md
+/docs/interview.md
+
+# New local verification output; published evidence remains tracked.
+/evidence/publication-verify.log
+

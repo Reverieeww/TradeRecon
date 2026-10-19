@@ -1,0 +1,12 @@
+{
+  "mode" : "MOCK",
+  "cases" : 70,
+  "calls" : 70,
+  "validContracts" : 70,
+  "fallbacks" : 0,
+  "humanReview" : "PENDING",
+  "semanticAccuracy" : "NOT_MEASURED",
+  "investigationTimeBenefit" : "NOT_MEASURED",
+  "cumulativeReservedUSD" : 0,
+  "rawFile" : "2026-10-18T20-12-46.471433100Z-65cce7b6-405c-4910-af5a-d04009f41f25.jsonl"
+}

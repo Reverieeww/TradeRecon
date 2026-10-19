@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: trade-recon
+  datasource:
+    hikari:
+      connection-timeout: 10000
+      connection-init-sql: "SET statement_timeout='20s'; SET lock_timeout='5s'"
+      data-source-properties:
+        reWriteBatchedInserts: true
+        connectTimeout: 10
+        socketTimeout: 30
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/traderecon}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  flyway:
+    user: ${MIGRATION_USER}
+    password: ${MIGRATION_PASSWORD}
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 11MB
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+  error:
+    include-message: never
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+app:
+  demo-password: ${DEMO_PASSWORD}
+  ai-mode: ${AI_MODE:OFF}
+  ai:
+    key: ${OPENAI_API_KEY:}
+    model: ${AI_MODEL:}
+    live-approved: ${AI_LIVE_APPROVED:false}
+    budget-usd: ${AI_BUDGET_USD:0}
+    input-usd-per-million: ${AI_INPUT_USD_PER_MILLION:0}
+    output-usd-per-million: ${AI_OUTPUT_USD_PER_MILLION:0}
+    max-requests: ${AI_MAX_REQUESTS:0}
+

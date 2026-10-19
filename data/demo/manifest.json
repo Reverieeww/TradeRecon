@@ -1,0 +1,507 @@
+{
+  "synthetic": true,
+  "seed": 101,
+  "randomness": "none; 20 hand-authored cases",
+  "business_date": "2026-10-15",
+  "first_received_at": "2026-10-15T09:00:00Z",
+  "note": "Fresh dataset per scenario. These are expected answers, not tested engine results.",
+  "cases": [
+    {
+      "id": "01_exact_match",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "01_exact_match/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "01_exact_match/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "Both sources describe the same execution."
+    },
+    {
+      "id": "02_two_partial_fills",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "02_two_partial_fills/01_internal.csv",
+          "row_count": 2,
+          "sha256": "ce182e4ff68c4453e6e8d2be094ca9bd4e9346389f9943e58d68ad3553adfb0c"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "02_two_partial_fills/02_broker.csv",
+          "row_count": 2,
+          "sha256": "ce182e4ff68c4453e6e8d2be094ca9bd4e9346389f9943e58d68ad3553adfb0c"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED",
+        "E101": "MATCHED"
+      },
+      "explanation": "Two 50-share executions of an order are two keys."
+    },
+    {
+      "id": "03_duplicate_delivery",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "03_duplicate_delivery/01_internal.csv",
+          "row_count": 2,
+          "sha256": "a351ced1399b55aaef62b26c874cdecc7c02a6eacfe5d4775027e43245612b77"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "03_duplicate_delivery/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "Second identical row is DUPLICATE; one event per source."
+    },
+    {
+      "id": "04_identity_conflict",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "04_identity_conflict/01_internal.csv",
+          "row_count": 2,
+          "sha256": "f746ed899c0e396fb5d3001898c8ce0dc37509ae6a07655169245431dfff6582"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "04_identity_conflict/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "WAITING"
+      },
+      "explanation": "Reject whole INTERNAL batch: IDENTITY_CONFLICT. BROKER accepted; no internal events."
+    },
+    {
+      "id": "05_semantic_duplicate",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "05_semantic_duplicate/01_internal.csv",
+          "row_count": 2,
+          "sha256": "a94c157b847b85ba80a62f8f82903e6604e3316e2df593f1d160753de0546827"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "05_semantic_duplicate/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "Different event ID, same execution revision and business fields: DUPLICATE."
+    },
+    {
+      "id": "06_multiple_differences",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "06_multiple_differences/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "06_multiple_differences/02_broker.csv",
+          "row_count": 1,
+          "sha256": "40329ed4494a9ae75a3387d1d2a9c516499691abf4c167f16388b968bc92a32a"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "BREAK"
+      },
+      "explanation": "List quantity, price and currency, not just the first difference."
+    },
+    {
+      "id": "07_missing_9m59",
+      "as_of": "2026-10-15T09:09:59Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "07_missing_9m59/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "WAITING"
+      },
+      "explanation": "as_of = 09:09:59Z."
+    },
+    {
+      "id": "08_missing_exactly_10m",
+      "as_of": "2026-10-15T09:10:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "08_missing_exactly_10m/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "BREAK"
+      },
+      "explanation": "as_of = 09:10:00Z; boundary is inclusive."
+    },
+    {
+      "id": "09_missing_10m01",
+      "as_of": "2026-10-15T09:10:01Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "09_missing_10m01/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "BREAK"
+      },
+      "explanation": "as_of = 09:10:01Z."
+    },
+    {
+      "id": "10_both_feeds_complete",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": true,
+          "file": "10_both_feeds_complete/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": true,
+          "file": "10_both_feeds_complete/02_broker.csv",
+          "row_count": 0,
+          "sha256": "f3493260f69dcfbb9b8f32927b3a03195a303478a3de81bcb8d94abf95ad456c"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "BREAK"
+      },
+      "explanation": "Two complete declarations make the missing side a break immediately."
+    },
+    {
+      "id": "11_revision_gap",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "11_revision_gap/01_internal.csv",
+          "row_count": 2,
+          "sha256": "369c900172dab42ca52f948f749a425514a94ba104f1c0b48f458721613749fc"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "11_revision_gap/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "DATA_BLOCKED"
+      },
+      "explanation": "Revision 2 is absent; do not take maximum revision."
+    },
+    {
+      "id": "12_gap_repaired",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "12_gap_repaired/01_internal.csv",
+          "row_count": 3,
+          "sha256": "37329c290ad51efd3e2a15273054f5fb3f642e513a180d63fa0e569a4fd66e40"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "12_gap_repaired/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "All revisions present, shuffled order; project 1 then 2 then 3."
+    },
+    {
+      "id": "13_missing_new",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "13_missing_new/01_internal.csv",
+          "row_count": 1,
+          "sha256": "e6733a2d4170fd8c58a830eb72a4f19430498c4a5146d2673c8d12f639470089"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "13_missing_new/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "DATA_BLOCKED"
+      },
+      "explanation": "Revision 1 NEW is missing."
+    },
+    {
+      "id": "14_one_side_cancel",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "14_one_side_cancel/01_internal.csv",
+          "row_count": 2,
+          "sha256": "31d2778206291c70299ccdc4711ec5c89d49dc6fb7feaef7422ba88ab70c7f5f"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "14_one_side_cancel/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "BREAK"
+      },
+      "explanation": "One source cancels, one remains active."
+    },
+    {
+      "id": "15_both_cancel",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "15_both_cancel/01_internal.csv",
+          "row_count": 2,
+          "sha256": "31d2778206291c70299ccdc4711ec5c89d49dc6fb7feaef7422ba88ab70c7f5f"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "15_both_cancel/02_broker.csv",
+          "row_count": 2,
+          "sha256": "31d2778206291c70299ccdc4711ec5c89d49dc6fb7feaef7422ba88ab70c7f5f"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "reason_code MATCHED_CANCELLED; retain both histories."
+    },
+    {
+      "id": "16_after_cancel",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "16_after_cancel/01_internal.csv",
+          "row_count": 3,
+          "sha256": "abf5ef6efbfb62a9261af160c7110136ea8fd76ce0ecc8b13104a23ddd988b1e"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "16_after_cancel/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "DATA_BLOCKED"
+      },
+      "explanation": "No resurrection after CANCEL."
+    },
+    {
+      "id": "17_decimal_scale",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "17_decimal_scale/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "17_decimal_scale/02_broker.csv",
+          "row_count": 1,
+          "sha256": "96780671966ecca5d03e40f57887a8bd5941a454d040979fc85ab56ad34f6fe8"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "Numeric equality ignores representational scale."
+    },
+    {
+      "id": "18_excess_precision",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "18_excess_precision/01_internal.csv",
+          "row_count": 1,
+          "sha256": "55963181d6c90cfd8c5a5290c3755ba088136c16185bc3fa08897215aebdc372"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "18_excess_precision/02_broker.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "WAITING"
+      },
+      "explanation": "Reject INTERNAL batch: validation error on price; BROKER accepted."
+    },
+    {
+      "id": "19_timezones",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "19_timezones/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "19_timezones/02_broker.csv",
+          "row_count": 1,
+          "sha256": "9535b8faf87dbfefa0b4a64298deb9423f4f6c75d2e3868b8723cbe5119aeaf9"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "Convert to UTC; occurred_at is not the cross-source key."
+    },
+    {
+      "id": "20_quoted_utf8",
+      "as_of": "2026-10-15T09:01:00Z",
+      "batches": [
+        {
+          "source": "INTERNAL",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "20_quoted_utf8/01_internal.csv",
+          "row_count": 1,
+          "sha256": "7518c0f6cd8c97c7014f253a892c559896bbcebb3455296a5a197052c4c302c3"
+        },
+        {
+          "source": "BROKER",
+          "business_date": "2026-10-15",
+          "feed_complete": false,
+          "file": "20_quoted_utf8/02_broker.csv",
+          "row_count": 1,
+          "sha256": "fb8ed5ae776c223a6a542a0a021ff85fee60ff7e264ffb28b0183db0a356b30f"
+        }
+      ],
+      "expected_status_by_execution": {
+        "E100": "MATCHED"
+      },
+      "explanation": "A CSV parser must handle quoted comma, quote, newline and UTF-8."
+    }
+  ]
+}

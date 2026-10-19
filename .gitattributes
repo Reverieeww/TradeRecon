@@ -1,0 +1,10 @@
+* text=auto
+mvnw text eol=lf
+*.sh text eol=lf
+*.cmd text eol=crlf
+*.csv text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+evidence/*.log -whitespace
+evidence/*.txt -whitespace
+

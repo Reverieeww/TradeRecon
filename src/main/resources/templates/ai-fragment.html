@@ -1,0 +1,22 @@
+<section class="card" id="ai-analysis" th:fragment="analysis">
+<h2>Read-only AI assistance · <span th:text="${aiMode}"></span></h2>
+<p class="notice">Model text is unverified advice, not rule evidence. Valid references do not prove a correct explanation. No AI output can close a case.</p>
+<p th:if="${aiMode=='OFF'}">AI OFF: templates remain available. Configure a mode locally before requesting assistance.</p>
+<form method="post" th:action="@{/cases/{id}/ai-analysis(id=${item.id})}"><input type="hidden" name="resultId" th:value="${item.current_result_id}"><input type="hidden" name="evidenceHash" th:value="${item.evidence_hash}"><button th:disabled="${!canWrite or aiMode=='OFF'}">Request analysis of this snapshot</button></form>
+<a th:href="@{/cases/{id}(id=${item.id})}">Refresh analysis status</a>
+<article th:each="a:${analyses}">
+<p><strong th:text="${a.mode+' · '+a.status}"></strong> <span class="metadata" th:text="${a.created_at}"></span></p>
+<p th:if="${a.mode=='MOCK'}">MOCK — deterministic test fixture; not real model output.</p>
+<p th:if="${a.status=='QUEUED' or a.status=='RUNNING'}">Processing in the background. Refresh this page or poll the status link; the template above remains usable.</p>
+<p th:if="${a.status=='FAILED'}">Analysis unavailable. Continue with the template and source evidence.</p>
+<p th:if="${a.status=='STALE'}">STALE: evidence changed. This output is not shown as current advice. Request analysis of the new snapshot.</p>
+<p th:text="${a.validation_errors}"></p>
+<a th:href="@{/api/ai-analyses/{id}(id=${a.id})}">Analysis status / metadata</a>
+<div th:if="${a.response_json!=null}">
+<p th:text="${a.response_json.path('summary').asText()}"></p>
+<p>Facts: <a th:each="f:${a.response_json.path('fact_refs')}" th:text="${f.asText()+' '}" th:href="${'#ai-'+a.id+'-'+f.asText()}"></a></p>
+<h3>Hypotheses — not established causes</h3><ul><li th:each="h:${a.response_json.path('hypotheses')}"><p th:text="${h.path('statement').asText()}"></p><p th:text="${h.path('uncertainty').asText()}"></p><a th:each="f:${h.path('supporting_fact_ids')}" th:text="${f.asText()+' '}" th:href="${'#ai-'+a.id+'-'+f.asText()}"></a></li></ul>
+<h3>Suggested checks</h3><ul><li th:each="c:${a.response_json.path('next_checks')}"><p th:text="${c.path('instruction').asText()}"></p><a th:text="${c.path('runbook_id').asText()}" th:href="${'/runbooks.html#'+c.path('runbook_id').asText()}"></a> <a th:each="f:${c.path('fact_refs')}" th:text="${f.asText()+' '}" th:href="${'#ai-'+a.id+'-'+f.asText()}"></a></li></ul>
+<p th:if="${a.response_json.path('abstain').asBoolean()}">Insufficient evidence — abstaining from a conclusion.</p><ul><li th:each="m:${a.response_json.path('missing_evidence')}" th:text="${m.asText()}"></li></ul>
+<details><summary>Exact frozen AI input facts</summary><ul><li th:each="f:${a.input_json.path('facts')}" th:id="${'ai-'+a.id+'-'+f.path('id').asText()}" th:text="${f.path('id').asText()+' · '+f.path('source').asText()+' · '+f.path('field').asText()+' — '+f.path('value').asText()}"></li></ul></details>
+</div></article></section>

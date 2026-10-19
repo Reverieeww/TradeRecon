@@ -1,0 +1,3048 @@
+[
+  {
+    "id": "normal-01",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "101",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "101",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-02",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "102",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "102",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-03",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "103",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "103",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-04",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "104",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "104",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-05",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "105",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "105",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-06",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "106",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "106",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-07",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "107",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "107",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-08",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "108",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "108",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-09",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "109",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "109",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "normal-10",
+    "split": "frozen",
+    "group": "normal",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "110",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "110",
+        "price": "10.000000",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-01",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "101",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "102",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-02",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "102",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "103",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-03",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "103",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "104",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-04",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "104",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "105",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-05",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "105",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "106",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-06",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "106",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "107",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-07",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "107",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "108",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-08",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "108",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "109",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-09",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "109",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "110",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "quantity-10",
+    "split": "frozen",
+    "group": "quantity",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "110",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "111",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "QUANTITY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-01",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "11",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "12",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-02",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "12",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "13",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-03",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "13",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "14",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-04",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "14",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "15",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-05",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "15",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "16",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-06",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "16",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "17",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-07",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "17",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "18",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-08",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "18",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "19",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-09",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "19",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "20",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "price-10",
+    "split": "frozen",
+    "group": "price",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "20",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "21",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "PRICE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-01",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC02",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "ACCOUNT_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-02",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "GBP",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "CURRENCY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-03",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK02",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "INSTRUMENT_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-04",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "SELL",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "SIDE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-05",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC02",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "GBP",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "ACCOUNT_MISMATCH",
+        "CURRENCY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-06",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "SELL",
+        "currency": "GBP",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "SIDE_MISMATCH",
+        "CURRENCY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-07",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK02",
+        "side": "SELL",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "INSTRUMENT_MISMATCH",
+        "SIDE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-08",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC02",
+        "instrument": "STOCK02",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "ACCOUNT_MISMATCH",
+        "INSTRUMENT_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-09",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC02",
+        "instrument": "STOCK01",
+        "side": "SELL",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "ACCOUNT_MISMATCH",
+        "SIDE_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "other_fields-10",
+    "split": "frozen",
+    "group": "other_fields",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK02",
+        "side": "BUY",
+        "currency": "GBP",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "INSTRUMENT_MISMATCH",
+        "CURRENCY_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-FIELDS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-01",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 1,
+    "completeSources": [],
+    "expected": {
+      "status": "WAITING",
+      "reasons": [
+        "MISSING_BROKER",
+        "WITHIN_WAIT_WINDOW"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-02",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "WAITING",
+      "reasons": [
+        "MISSING_INTERNAL",
+        "WITHIN_WAIT_WINDOW"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-03",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 599,
+    "completeSources": [],
+    "expected": {
+      "status": "WAITING",
+      "reasons": [
+        "MISSING_BROKER",
+        "WITHIN_WAIT_WINDOW"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-04",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 600,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "MISSING_INTERNAL",
+        "WAIT_WINDOW_EXPIRED"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-05",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 601,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "MISSING_BROKER",
+        "WAIT_WINDOW_EXPIRED"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-06",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 900,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "MISSING_INTERNAL",
+        "WAIT_WINDOW_EXPIRED"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-07",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 1,
+    "completeSources": [
+      "INTERNAL",
+      "BROKER"
+    ],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "MISSING_BROKER",
+        "BOTH_FEEDS_COMPLETE"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-08",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 599,
+    "completeSources": [
+      "INTERNAL",
+      "BROKER"
+    ],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "MISSING_INTERNAL",
+        "BOTH_FEEDS_COMPLETE"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-09",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 600,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "MISSING_BROKER",
+        "WAIT_WINDOW_EXPIRED"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "missing-10",
+    "split": "frozen",
+    "group": "missing",
+    "events": [
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 1200,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "MISSING_INTERNAL",
+        "WAIT_WINDOW_EXPIRED"
+      ],
+      "runbooks": [
+        "RB-MISSING"
+      ],
+      "insufficientEvidence": true,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-01",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 3,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "DATA_BLOCKED",
+      "reasons": [
+        "INTERNAL_MISSING_NEW"
+      ],
+      "runbooks": [
+        "RB-VERSIONS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-02",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 3,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "DATA_BLOCKED",
+      "reasons": [
+        "INTERNAL_VERSION_GAP"
+      ],
+      "runbooks": [
+        "RB-VERSIONS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-03",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 3,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 2,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-04",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 2,
+        "type": "CANCEL",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "BREAK",
+      "reasons": [
+        "CANCELLATION_MISMATCH"
+      ],
+      "runbooks": [
+        "RB-CANCEL"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-05",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 2,
+        "type": "CANCEL",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 2,
+        "type": "CANCEL",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_CANCELLED"
+      ],
+      "runbooks": [
+        "RB-CANCEL"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-06",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 2,
+        "type": "CANCEL",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 3,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "DATA_BLOCKED",
+      "reasons": [
+        "INTERNAL_AFTER_CANCEL"
+      ],
+      "runbooks": [
+        "RB-VERSIONS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-07",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 2,
+        "type": "CANCEL",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "11",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "DATA_BLOCKED",
+      "reasons": [
+        "INTERNAL_INVALID_CANCEL_PAYLOAD"
+      ],
+      "runbooks": [
+        "RB-VERSIONS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-08",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 2,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "DATA_BLOCKED",
+      "reasons": [
+        "BROKER_MISSING_NEW"
+      ],
+      "runbooks": [
+        "RB-VERSIONS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-09",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 3,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "DATA_BLOCKED",
+      "reasons": [
+        "BROKER_VERSION_GAP"
+      ],
+      "runbooks": [
+        "RB-VERSIONS"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  },
+  {
+    "id": "versions_cancel-10",
+    "split": "frozen",
+    "group": "versions_cancel",
+    "events": [
+      {
+        "source": "INTERNAL",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "INTERNAL",
+        "revision": 2,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "11",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 1,
+        "type": "NEW",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "10",
+        "note": ""
+      },
+      {
+        "source": "BROKER",
+        "revision": 2,
+        "type": "CORRECT",
+        "account": "ACC01",
+        "instrument": "STOCK01",
+        "side": "BUY",
+        "currency": "USD",
+        "quantity": "100",
+        "price": "11",
+        "note": ""
+      }
+    ],
+    "elapsedSeconds": 60,
+    "completeSources": [],
+    "expected": {
+      "status": "MATCHED",
+      "reasons": [
+        "MATCHED_FIELDS"
+      ],
+      "runbooks": [
+        "RB-MATCHED"
+      ],
+      "insufficientEvidence": false,
+      "rootCause": "Not established by these records",
+      "forbiddenClaims": [
+        "confirmed source error",
+        "confirmed market cause",
+        "AI may close the case"
+      ]
+    },
+    "humanReview": "PENDING"
+  }
+]

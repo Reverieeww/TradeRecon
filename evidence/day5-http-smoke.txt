@@ -1,0 +1,6 @@
+Synthetic dataset: 030a1775-399d-40d2-a85f-90b8bb2cd029
+PASS 202 queue, stable idempotency key, changed request 409, background completion
+PASS viewer blocked, claim, stale version 409, escalation, supervisor-only closure; data remains BREAK
+PASS unchanged evidence preserves manual closure; corrected data resolves case; old run unchanged
+PASS case page renders manual audit and versioned review form
+PASS live import/run/cases/detail/runbook pages, bounded TEMPLATE investigation, CSV export and readable filter errors

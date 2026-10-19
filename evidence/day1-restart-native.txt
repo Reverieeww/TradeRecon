@@ -1,0 +1,4 @@
+PASS: packaged application starts and real database health is UP.
+PASS: committed dataset survives application AND PostgreSQL restart.
+PASS: Flyway validation succeeds on restart without manual table creation.
+Application remains running at http://127.0.0.1:8080; PID saved in .local/app.pid.

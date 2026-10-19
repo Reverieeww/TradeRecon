@@ -1,0 +1,16 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< dev.huanling:trade-recon >----------------------
+[INFO] Building TradeRecon 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- spotless:2.44.3:apply (default-cli) @ trade-recon ---
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\AiService.java
+[INFO] Spotless.Java is keeping 74 files clean - 1 were changed to be clean, 1 were already clean, 72 were skipped because caching determined they were already clean
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.511 s
+[INFO] Finished at: 2026-10-18T21:20:41+01:00
+[INFO] ------------------------------------------------------------------------

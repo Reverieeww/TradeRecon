@@ -1,0 +1,27 @@
+                                                                                       QUERY PLAN                                                                                       
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=3040.27..3040.39 rows=50 width=24) (actual time=3.523..3.528 rows=50 loops=1)
+   Buffers: shared hit=2017 read=4
+   ->  Sort  (cost=3040.27..3041.52 rows=500 width=24) (actual time=3.522..3.524 rows=50 loops=1)
+         Sort Key: c.updated_at DESC, c.id
+         Sort Method: top-N heapsort  Memory: 32kB
+         Buffers: shared hit=2017 read=4
+         ->  Nested Loop  (cost=28.58..3023.66 rows=500 width=24) (actual time=0.086..3.426 rows=500 loops=1)
+               Buffers: shared hit=2011 read=4
+               ->  Bitmap Heap Scan on exception_case c  (cost=28.16..138.41 rows=500 width=40) (actual time=0.070..0.140 rows=500 loops=1)
+                     Recheck Cond: (dataset_id = 'aac598a4-6291-4615-9405-f794fa70ad38'::uuid)
+                     Heap Blocks: exact=8
+                     Buffers: shared hit=15
+                     ->  Bitmap Index Scan on exception_case_dataset_id_business_date_execution_id_key  (cost=0.00..28.03 rows=500 width=0) (actual time=0.051..0.051 rows=500 loops=1)
+                           Index Cond: (dataset_id = 'aac598a4-6291-4615-9405-f794fa70ad38'::uuid)
+                           Buffers: shared hit=7
+               ->  Index Only Scan using recon_result_pkey on recon_result r  (cost=0.42..5.77 rows=1 width=16) (actual time=0.006..0.006 rows=1 loops=500)
+                     Index Cond: (id = c.current_result_id)
+                     Heap Fetches: 500
+                     Buffers: shared hit=1996 read=4
+ Planning:
+   Buffers: shared hit=307 read=1
+ Planning Time: 1.131 ms
+ Execution Time: 3.613 ms
+(23 rows)
+

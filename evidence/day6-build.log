@@ -1,0 +1,99 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< dev.huanling:trade-recon >----------------------
+[INFO] Building TradeRecon 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- spotless:2.44.3:apply (default-cli) @ trade-recon ---
+[INFO] Index file does not exist. Fallback to an empty index
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\AiEvidence.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\AiOutputValidator.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\AiService.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\AiSettings.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\AiWorker.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\InvestigationProvider.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\LiveInvestigationProvider.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\ai\MockInvestigationProvider.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\web\AiController.java
+[INFO] clean file: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\web\ReconciliationPageController.java
+[INFO] Spotless.Java is keeping 69 files clean - 10 were changed to be clean, 59 were already clean, 0 were skipped because caching determined they were already clean
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ trade-recon ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 19 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ trade-recon ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 54 source files with javac [debug parameters release 21] to target\classes
+[INFO] /C:/Users/Aurora/.codex/.chatgpt-projects/g-p-697f8e37a65c8191ad90616fb2dc9d22/trade-recon-final/src/main/java/dev/huanling/traderecon/jobs/RunSubmissionService.java: C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final\src\main\java\dev\huanling\traderecon\jobs\RunSubmissionService.javaʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /C:/Users/Aurora/.codex/.chatgpt-projects/g-p-697f8e37a65c8191ad90616fb2dc9d22/trade-recon-final/src/main/java/dev/huanling/traderecon/jobs/RunSubmissionService.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ trade-recon ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ trade-recon ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 15 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] /C:/Users/Aurora/.codex/.chatgpt-projects/g-p-697f8e37a65c8191ad90616fb2dc9d22/trade-recon-final/src/test/java/dev/huanling/traderecon/persistence/ReconciliationIT.java: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /C:/Users/Aurora/.codex/.chatgpt-projects/g-p-697f8e37a65c8191ad90616fb2dc9d22/trade-recon-final/src/test/java/dev/huanling/traderecon/persistence/ReconciliationIT.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ trade-recon ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running dev.huanling.traderecon.domain.MoneyFieldsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s -- in dev.huanling.traderecon.domain.MoneyFieldsTest
+[INFO] Running dev.huanling.traderecon.domain.TradeEventTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s -- in dev.huanling.traderecon.domain.TradeEventTest
+[INFO] Running dev.huanling.traderecon.ingestion.CsvParserTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.471 s -- in dev.huanling.traderecon.ingestion.CsvParserTest
+[INFO] Running dev.huanling.traderecon.reconciliation.EvaluationFixtureTest
+[INFO] Tests run: 71, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.630 s -- in dev.huanling.traderecon.reconciliation.EvaluationFixtureTest
+[INFO] Running dev.huanling.traderecon.reconciliation.ExecutionProjectorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in dev.huanling.traderecon.reconciliation.ExecutionProjectorTest
+[INFO] Running dev.huanling.traderecon.reconciliation.InvestigationSafetyTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in dev.huanling.traderecon.reconciliation.InvestigationSafetyTest
+[INFO] Running dev.huanling.traderecon.reconciliation.ReconciliationEngineTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s -- in dev.huanling.traderecon.reconciliation.ReconciliationEngineTest
+[INFO] Running dev.huanling.traderecon.security.SecurityTest
+21:08:37.201 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [dev.huanling.traderecon.security.SecurityTest]: SecurityTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:08:37.352 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration dev.huanling.traderecon.TradeReconApplication for test class dev.huanling.traderecon.security.SecurityTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-18T21:08:37.833+01:00  INFO 18012 --- [trade-recon] [           main] d.h.traderecon.security.SecurityTest     : Starting SecurityTest using Java 21.0.12.1 with PID 18012 (started by Aurora in C:\Users\Aurora\.codex\.chatgpt-projects\g-p-697f8e37a65c8191ad90616fb2dc9d22\trade-recon-final)
+2026-10-18T21:08:37.834+01:00  INFO 18012 --- [trade-recon] [           main] d.h.traderecon.security.SecurityTest     : No active profile set, falling back to 1 default profile: "default"
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\Aurora\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-10-18T21:08:40.340+01:00  INFO 18012 --- [trade-recon] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+2026-10-18T21:08:40.502+01:00  INFO 18012 --- [trade-recon] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-10-18T21:08:41.566+01:00  INFO 18012 --- [trade-recon] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-18T21:08:41.569+01:00  INFO 18012 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-18T21:08:41.572+01:00  INFO 18012 --- [trade-recon] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-10-18T21:08:41.642+01:00  INFO 18012 --- [trade-recon] [           main] d.h.traderecon.security.SecurityTest     : Started SecurityTest in 4.234 seconds (process running for 6.543)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.979 s -- in dev.huanling.traderecon.security.SecurityTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 116, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.373 s
+[INFO] Finished at: 2026-10-18T21:08:42+01:00
+[INFO] ------------------------------------------------------------------------

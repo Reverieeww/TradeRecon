@@ -1,0 +1,5 @@
+Synthetic HTTP test dataset: 59b1293b-cd76-46ad-84e2-af5c8ecc04eb
+PASS four statuses, total 4: ab0bb2b1-0d90-4e1a-bccf-2d03735fe4a3
+PASS identical rerun keeps two stable cases
+PASS four matches and two resolved cases; original run remains unchanged: 6755e337-acb0-4cd8-bb46-b73e4c7d521a
+PASS authenticated run and case HTML pages render real data

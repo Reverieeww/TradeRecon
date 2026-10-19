@@ -1,0 +1,5 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org"><body>
+<header th:fragment="nav"><strong><a href="/">TradeRecon</a></strong><nav aria-label="Main navigation"><a th:href="@{/imports(dataset=${dataset})}">1 · Imports</a><a th:href="@{/runs(dataset=${dataset})}">2 · Runs</a><a th:href="@{/cases(dataset=${dataset})}">3 · Cases</a></nav><span th:text="${username}"></span><form th:action="@{/logout}" method="post"><button class="secondary">Sign out</button></form></header>
+<label th:fragment="dataset">Dataset<select name="dataset"><option th:each="d:${datasets}" th:value="${d.id}" th:text="${d.name}" th:selected="${d.id == dataset}"></option></select></label>
+<footer th:fragment="footer"><p class="muted">Synthetic data only · AI is optional and cannot change records · Manual review does not change the reconciliation result.</p></footer>
+</body></html>
