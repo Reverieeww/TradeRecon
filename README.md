@@ -1,58 +1,85 @@
 # TradeRecon
-A Java application for reconciling two **synthetic execution feeds**, with traceable imports, deterministic matching and automatic case history.
 
-For a June business-date demonstration, use [the synthetic June dataset](data/june-demo/README.md).
-For privacy checks before publishing, see [the publication checklist](docs/publication-privacy.md).
+TradeRecon compares internal trade records with broker execution reports and turns discrepancies into cases for review. It handles duplicate uploads, corrections, cancellations and missing revisions, while keeping the original records available for investigation.
 
-## Status: Day 6–7 release candidate
-Implemented: transactional ingestion, frozen snapshots, deterministic reconciliation, automatic cases, durable queue and recovery, concurrent review safeguards, and append-only audit. Day 5 adds filtered/paginated import, run and case pages, field comparison and version timelines, full CSV export, and evidence-linked deterministic investigation templates.
-Day 6 adds OFF/MOCK/LIVE investigation, a real HTTP adapter, bounded persistent queue, output/reference validation, evidence cache, stale-output handling, conservative budget reservations and template fallback. AI defaults to OFF; no live calls have been made.
-Start with [AI setup](docs/ai-setup.md), [release acceptance](docs/day7-release.md) and [scale measurements](docs/day7-performance.md). The frozen 60+10 cases have authored labels with human review PENDING. No live AI quality or investigation-time improvement is claimed. Day 1–5 documents describe historical milestones.
-On this Windows machine, all three synthetic scales completed one warm-up and ten measured runs. At 100,000 total two-feed events (50,000 keys), median ingestion was 9.90 seconds and reconciliation 12.03 seconds. This is service-level timing, not HTTP latency; see the report for ranges and limits.
-See the [API contracts](docs/api.md), [recovery report](docs/day4-recovery.md) and [ingestion performance experiment](docs/day2-performance.md). Earlier day documents are historical snapshots.
-Local benchmark: median service ingestion time for 10,000 synthetic events decreased from 3.83s to 1.04s using batched JDBC writes (72.9%, 10 measured runs per mode). This excludes HTTP and reconciliation. Both complete experiment rounds are retained.
+The project uses Java 21, Spring Boot, PostgreSQL, Spring JDBC, Flyway and Thymeleaf. All sample data is synthetic.
 
-This is **not** a limit order book or matching engine. Personal planning and learning material is not included in the current published tree. Historical reports may refer to the original private plan; public acceptance criteria and outstanding checks are recorded in the [release checklist](docs/day7-release.md). Existing Git history is unchanged.
+## What it does
 
-## Quick start on this Windows computer
-Open PowerShell in this project folder:
+Upload a CSV from each source, run reconciliation, then inspect the differences in the case view. Each run uses a frozen set of input batches, so later uploads do not change an existing result.
+
+- Imports validate each row and detect duplicate files and events. Corrections create new revisions instead of overwriting the original event.
+- Reconciliation compares the effective records from both sources and creates cases for discrepancies or incomplete data.
+- The web interface includes filters, field comparisons, revision timelines, review actions and CSV exports.
+- Background jobs persist in PostgreSQL and support recovery after interruption. Version checks prevent one reviewer from silently overwriting another reviewer's changes.
+
+An optional AI feature helps explain the evidence in a case. It has read-only access, validates output references and falls back to a fixed template when analysis fails. It is disabled by default; the rest of the application works without a model API key.
+
+## Run locally
+
+For a fresh checkout, use Docker Compose with Linux containers:
+
+```sh
+git clone https://github.com/Reverieeww/TradeRecon.git
+cd TradeRecon
+```
+
+Copy `.env.example` to `.env` and fill in `MIGRATION_PASSWORD`, `DB_PASSWORD` and `DEMO_PASSWORD`. Use distinct random passwords; the demo password must contain at least 12 characters. Leave `AI_MODE=OFF` for the basic demo.
+
+```sh
+docker compose up --build -d
+```
+
+Open http://127.0.0.1:8080. The demo accounts are `viewer`, `analyst` and `supervisor`; they share the password set in `DEMO_PASSWORD` and have different permissions.
+
+Use `docker compose stop` to stop the application and keep the database. The database volume stores imported data between restarts.
+
+The [sample dataset](data/demo/manifest.json) covers 20 scenarios, including exact matches, partial fills, duplicates and missing revisions. A smaller [June business-date example](data/june-demo/README.md) is also available.
+
+### Windows without Docker
+
+The native scripts expect Java and PostgreSQL binaries under `.tools/`. Those binaries are local dependencies and are not included in the repository. Once that environment is configured, start the application from PowerShell:
+
 ```powershell
 .\scripts\start-local.ps1
 ```
-Then open http://127.0.0.1:8080. Usernames: viewer, analyst, supervisor.
-If the background demo from the first-day setup is already running, use it directly. Before starting another instance, run `.\scripts\stop-local-app.ps1`.
-The generated local password is the `demoPassword` field in `.local/settings.json` (ignored by Git). All three accounts share that demo-only password. Spring Security authenticates the environment-configured demo accounts; their BCrypt hashes and stable identity/role records are synchronized to app_user at startup for audit and assignment. Backend role checks are implemented; arbitrary user provisioning/password management is not.
-If PowerShell blocks scripts, use a session-scoped invocation: `pwsh -ExecutionPolicy Bypass -File .\scripts\start-local.ps1`. No machine policy changes are required.
 
-For tests, in a second terminal:
-```powershell
-.\scripts\verify-local.ps1
-```
-This loads project-local Java 21 and tests **real PostgreSQL 17.6** on 127.0.0.1:55432. It does not change global PATH. Test and demo databases are separate. Keep .tools and .local private and out of Git.
+The script generates a demo password in `.local/settings.json` under `demoPassword`. If an instance is already running, stop it with `.\scripts\stop-local-app.ps1` before restarting. See the [runbook](docs/runbook.md) for operational details.
 
-Stop the foreground app with Ctrl+C. To stop the project database:
-```powershell
-& .\.tools\postgres\pgsql\bin\pg_ctl.exe -D .\.local\pgdata -m fast -w stop
-```
-Data remains in .local/pgdata. Starting again reuses it. Do not delete that directory to restart.
+## Tests
 
-## Clean-machine path (Windows or Linux, Docker required)
-Install JDK 21 and a working Docker Engine/Desktop with Linux containers.
-Copy .env.example to .env; set three distinct random passwords (DEMO_PASSWORD >= 12 characters).
+With JDK 21 and Docker installed:
+
 ```sh
-docker compose up --build -d
 ./mvnw -B -ntp verify
 python scripts/generate_data.py --check
+python scripts/generate_eval.py --check
 ```
-Windows uses `.\mvnw.cmd`. The default verification starts a disposable PostgreSQL 17.6 Testcontainer, runs migrations on an empty database and fails if Docker is unavailable.
-The app is at http://127.0.0.1:8080. Database ports are not published by Compose. `docker compose stop` preserves data.
-Container/CI execution is **not yet verified on this computer**, which has no Docker. Native PostgreSQL results do not claim container reproducibility.
 
-## Read next
-- [Progress and evidence](docs/day1-status.md): actual checks and remaining gates.
-- [Domain](docs/domain.md), [architecture](docs/architecture.md), [API](docs/api.md), [decisions](docs/decisions.md).
-- [Golden manifest](data/demo/manifest.json): 20 independent expected answers, now exercised through real imports and reconciliation in ReconciliationIT.
-- [Runbook](docs/runbook.md), [versions](docs/versions.md).
+On Windows, use `.\mvnw.cmd` in place of `./mvnw`. The Python commands check that the committed fixtures match their generators. Integration tests use a disposable PostgreSQL 17.6 container and apply migrations to an empty database.
 
-No live model provider or payment is configured. AI is OFF. No real financial/customer data is used.
+For the configured native Windows environment, `.\scripts\verify-local.ps1` runs against a separate local PostgreSQL test database. Tests cover revision handling, reconciliation, duplicate imports, recovery, concurrent reviews and access control.
 
+The recorded verification runs used native PostgreSQL on Windows. Docker and Ubuntu CI execution were still unverified in those records.
+
+## Performance
+
+Batching JDBC writes reduced median ingestion time for 10,000 synthetic events from 3.83 seconds to 1.04 seconds, a 72.9% reduction across ten measured runs per mode. This measures the ingestion service, excluding HTTP and reconciliation. The [experiment report](docs/day2-performance.md) describes the setup and retains both experiment rounds.
+
+A separate scale test used 1,000, 10,000 and 100,000 total events across both feeds, with one warm-up and ten measured runs at each size. At 100,000 events (50,000 execution keys), median ingestion took 9.90 seconds and reconciliation took 12.03 seconds. These are local measurements; see the [scale report](docs/day7-performance.md) for the ranges and test conditions.
+
+## AI setup and current limits
+
+The AI integration supports `OFF`, `MOCK` and `LIVE` modes. Live mode requires a model, API key, pricing configuration and an explicit budget. The [setup guide](docs/ai-setup.md) explains the configuration and separate budgets for web requests and batch evaluation.
+
+Recorded AI tests use mock responses. Live model quality and any reduction in investigation time have not been measured. The evaluation set contains 60 cases and 10 challenges; independent review of their labels is still pending.
+
+This is a demo application with fixed accounts, rather than a full user-management system. Browser visual acceptance is also pending. The [release checklist](docs/day7-release.md) records the remaining checks.
+
+## Further reading
+
+- [Domain rules](docs/domain.md) and [database fields](docs/data-dictionary.md)
+- [API contracts](docs/api.md)
+- [Architecture decisions](docs/adr/)
+- [Recovery testing](docs/day4-recovery.md)
+- [Evaluation method](docs/evaluation.md)
